@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kritarat Profile</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="bg-[#F5F5F5]">
+	<header class="bg-neutral-950 shadow-md sticky w-screen z-30 top-0">
+		<nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+			<div class="flex lg:flex-1">
+					<a href="#home" class="text-md font-semibold leading-6 text-white">Kritarat Moonmanee</a>
+			</div>
+			<div class="flex lg:hidden">
+				<button type="button"
+					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white" onclick="mobile_menu_toggle()">
+					<span class="material-symbols-outlined">
+						menu
+					</span>
+				</button>
+				<div id="mobile-menu">
+					<div id="mobile-menu-bg" class="fixed z-10 opacity-30 bg-black h-screen w-screen top-0 left-0 hidden" onclick="mobile_menu_toggle()"></div>
+					<div id="mobile-menu-body" class="bg-white absolute h-screen w-[300px] top-0 -right-[300px] transition-all duration-500 z-20 rounded-tl-3xl shadow-xl">
+						<div class="h-full w-full flex flex-col p-5">
+							<span class="material-symbols-outlined cursor-pointer hover:text-neutral-500 size-fit p-1" onclick="mobile_menu_toggle()">
+								close
+							</span>
+							<div class="flex flex-col mt-2">
+								<a href="#about" class="text-xl font-semibold leading-6 text-gray-900 p-3 hover:text-neutral-500">About</a>
+								<a href="#education" class="text-xl font-semibold leading-6 text-gray-900 p-3 hover:text-neutral-500">Education</a>
+								<a href="#skills" class="text-xl font-semibold leading-6 text-gray-900 p-3 hover:text-neutral-500">Skills</a>
+								<a href="#contact" class="text-xl font-semibold leading-6 text-gray-900 p-3 hover:text-neutral-500">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden lg:flex lg:gap-x-12">
+				<a href="#about" class="text-sm font-semibold leading-6 text-white">About</a>
+				<a href="#education" class="text-sm font-semibold leading-6 text-white">Education</a>
+				<a href="#skills" class="text-sm font-semibold leading-6 text-white">Skills</a>
+				<a href="#contact" class="text-sm font-semibold leading-6 text-white">Contact</a>
+			</div>
+		</nav>
+	</header>
+	<main class="flex flex-col items-center gap-4 px-4">
+		<section id="home" class="h-screen w-screen shadow-lg p-10 pt-24 grid place-items-center relative overflow-hidden">
+			<div id="home-bg" class="absolute size-full"></div>
+			<div class="container flex items-center justify-center flex-wrap z-20 gap-x-20 gap-y-10">
+				<div class="max-w-[500px] grid place-items-center">
+					<img src="img/pfp.jpg" alt="" class="size-[400px] max-sm:size-[300px] aspect-square object-cover object-top rounded-[100%] border-black shadow-2xl">
+				</div>
+				<div class="max-w-[800px] flex flex-col items-center justify-center text-center">
+					<div class="text-[60px] font-extrabold text-white">KRITARAT MOONMANEE</div>
+					<div class="text-[30px] text-white">Computer Engineering Student</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="w-fit flex flex-col items-center gap-8 py-5">
+			<div class="text-[40px] uppercase font-bold border-b-2 border-black">
+				About Me
+			</div>
+			<div class="py-16 px-12 max-w-[1200px] flex flex-col gap-6 text-[18px] bg-white rounded-xl shadow-lg">
+				<div class="flex gap-10 items-center justify-evenly sm:mb-6 flex-wrap">
+					<img src="img/about_img.jpg" class="w-[200px] h-[200px] object-cover object-top">
+					<div class="flex flex-col gap-2">
+						<div class="flex flex-wrap gap-2">
+							<span class="font-semibold">Name:</span>
+							<span>Kritarat Moonmanee</span>
+						</div>
+						<div class="flex flex-wrap gap-2">
+							<span class="font-semibold">Birtday:</span>
+							<span>November 14, 2005</span>
+						</div>
+						<div class="flex flex-wrap gap-2">
+							<span class="font-semibold">Location:</span>
+							<span>Bangkok, Thailand</span>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-4">
+					<article class="sm:text-justify">
+						I am a first-year Computer Engineering student at Chulalongkorn University with a passion for programming and problem-solving. My journey in technology began with competitive programming, where I developed a strong foundation in algorithms, data structures, and logical thinking.
+					</article>
+					<article class="sm:text-justify">
+						In addition to my programming skills, I have experience in front-end web development and enjoy creating dynamic, user-friendly websites using HTML, CSS, JavaScript, and modern frameworks. I am always eager to learn and explore new technologies, seeking opportunities to grow as a versatile professional in software development, data analysis, and web design.
+					</article>
+				</div>
+				<article>
+					Feel free to connect with me for potential collaborations or to discuss all things tech!
+				</article>
+			</div>
+		</section>
+		<section id="education" class="w-fit flex flex-col gap-8 py-5">
+			<div class="flex justify-center">		
+				<div class="text-[40px] uppercase font-bold border-b-2 border-black">
+					Education
+				</div>
+			</div>
+			<div class="text-[20px] uppercase font-bold border-b-2 border-black w-fit">2024 - now</div>
+			<div class="relative">
+				<div class="h-full sm:w-[3px] bg-black absolute left-[30px]"></div>
+				<div class="sm:ml-20 max-w-[1200px] flex items-center justify-center gap-x-6 text-[18px] bg-white rounded-xl shadow-lg p-5">
+					<div class="flex gap-10 items-center justify-evenly flex-wrap min-h-[150px]">
+						<img src="img/cu_logo.jpg" class="w-[150px] h-[150px] object-cover">
+						<div class="flex flex-col gap-2">
+							<span>Chulalongkorn University</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-[20px] uppercase font-bold border-b-2 border-black w-fit">2021 - 2023</div>
+			<div class="relative">
+				<div class="h-full sm:w-[3px] bg-black absolute left-[30px]"></div>
+				<div class="sm:ml-20 max-w-[1200px] flex items-center justify-center gap-x-6 text-[18px] bg-white rounded-xl shadow-lg p-5">
+					<div class="flex gap-10 items-center justify-evenly flex-wrap min-h-[150px]">
+						<img src="img/rs_logo.jpg" class="w-[100px] h-[100px] object-cover">
+						<div class="flex flex-col gap-2">
+							<span>Rajsima Wittayalai School</span>
+							<span>GPAX: 3.89</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-[20px] uppercase font-bold border-b-2 border-black w-fit">2018 - 2020</div>
+			<div class="relative">
+				<div class="h-full sm:w-[3px] bg-black absolute left-[30px]"></div>
+				<div class="sm:ml-20 max-w-[1200px] flex items-center justify-center gap-x-6 text-[18px] bg-white rounded-xl shadow-lg p-5">
+					<div class="flex gap-10 items-center justify-evenly flex-wrap min-h-[150px]">
+						<img src="img/bps_logo.jpg" class="w-[100px] h-[100px] object-cover">
+						<div class="flex flex-col gap-2">
+							<span>Buriram Pittayakhom School</span>
+							<span>GPAX: 4.00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="w-fit flex flex-col items-center gap-8 py-5"></section>
+			<div class="text-[40px] uppercase font-bold border-b-2 border-black">Skills</div>
+			<div class="flex flex-col gap-5 container md:px-36">
+				<div class="flex gap-5 max-sm:flex-col">
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/c_logo.jpg" class="w-[130px] h-[130px] object-contain">
+					</div>
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/cpp_logo.jpg" class="w-[130px] h-[130px] object-contain">
+					</div>
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/webdev_logo.jpg" class="w-full h-[130px] object-contain">
+					</div>
+				</div>
+				<div class="flex gap-5 max-sm:flex-col">
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/py.jpg" class="w-[130px] h-[130px] object-contain">
+					</div>
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/php_logo.jpg" class="w-[130px] h-[130px] object-contain">
+					</div>
+					<div class="grid place-items-center bg-white rounded-xl shadow-lg p-7 w-full">
+						<img src="img/sql_logo.jpg" class="w-[130px] h-[130px] object-contain">
+					</div>
+				</div>
+			</div>
+			<div class="py-5 px-12 max-w-[1200px] flex flex-col gap-6 text-[18px] bg-white rounded-xl shadow-lg items-center">
+				<div class="text-2xl uppercase font-bold">More Website Development Projects</div>
+				<ul class="flex gap-3 flex-wrap">
+					<li><a href="https://idealkritarat.github.io/2reg.chula-mockup/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">2reg.chula-mockup</a></li>
+					<li><a href="https://idealkritarat.github.io/remastered-reg.chula-mock/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">remastered-reg.chula-mock</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-spotify-desktop-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-spotify-desktop-tailwind</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-spotify-mockup-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-spotify-mockup-tailwind</a></li>
+					<li><a href="https://idealkritarat.github.io/Hora-homora/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">Hora-homora</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-chatgpt-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-chatgpt-tailwind</a></li>
+					<li><a href="https://idealkritarat.github.io/Cat-Dog-Toe/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">Cat-Dog-Toe</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-line-app-mockup/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-line-app-mockup</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-youtube-webpage-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-youtube-webpage-tailwind</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-roblox-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-roblox-tailwind</a></li>
+					<li><a href="https://idealkritarat.github.io/google-translate/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">google-translate</a></li>
+					<li><a href="https://idealkritarat.github.io/responsive-instagram-tailwind/" target="_blank" class="hover:bg-neutral-200 hover:scale-105 transition-all block px-5 py-2 shadow-md border rounded-xl">responsive-instagram-tailwind</a></li>
+				</ul>
+			</div>
+		</section>
+		<section id="contact" class="flex flex-col items-center gap-8 py-5 w-full">
+			<div class="text-[40px] uppercase font-bold border-b-2 border-black">Contact</div>
+			<div class="flex flex-col gap-5 container">
+				<div class="bg-white rounded-xl shadow-lg p-7 w-full flex flex-col items-center">
+					<div class="flex flex-col gap-2">
+						<div>
+							<span class="font-bold">Telephone:</span>
+							<span>091-021-1114</span>
+						</div>
+						<div>
+							<span class="font-bold">Gmail:</span>
+							<span>kritarat.m@gmail.com</span>
+						</div>
+						<div>
+							<span class="font-bold">Line:</span>
+							<span>idealkritarat</span>
+						</div>
+						<div>
+							<span class="font-bold">Facebook:</span>
+							<span>Kritarat Moonmanee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

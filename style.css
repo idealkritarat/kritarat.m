@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#mobile-menu-bg {
+    display: none;
+}
+#mobile-menu-body {
+    right: -300px;
+}
+
+#mobile-menu.mobile-menu-open  {
+    #mobile-menu-bg {
+        display: block;
+    }
+    #mobile-menu-body {
+        right: 0;
+    }
+}
+
+#home  {
+    background-image: url("img/home_bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#home-bg {
+    backdrop-filter: blur(8px);
+}
+
+section {
+    scroll-margin-top: 72px;
+}
